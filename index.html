@@ -5,24 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="author" content="Felipe Montoya R. (femonres@gmail.com)">
         <title>Comenzando con la fotografía</title>
-        <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+        <link rel="stylesheet" href="css/estilos.css" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
     </head>
     <body>
-        <div class="contenido">
+        <div id="contenido">
             <!-- Cabecera de la pagina -->
             <header>
-                <h1 class="nav_title">Comenzando con la fotografía</h1>
-                <nav class="nav_bar">
-                    <a href="./index.html" class="active">Inicio</a>
-                    <a href="./paisajes.html" class="inactive">Paisajes</a>
-                    <a href="./retratos.html" class="inactive"></a>
-                </nav>
+                <div class="nav_title">
+                    <h1>Comenzando con la fotografía</h1>
+                </div>
+                <div class="nav_menu">
+                    <nav>
+                        <a href="index.html" class="active">Inicio</a>
+                        <a href="paisajes.html" class="inactive">Paisajes</a>
+                        <a href="retratos.html" class="inactive"></a>
+                    </nav>
+                </div>
             </header>
             <!-- Contenido de la pagina -->
-            <section></section>
+            <section id="seccion_central">
+                <img src="img/imagen_central.jpg" alt="Imagen Central">
+            </section>
+            
+            <section id="seccion_secundaria"></section>
             <!-- Footer de la pagina -->
-            <footer>
+            <footer id="footer">
                 <hr />
                 <ul>
                     <li><span><strong>Correo: </strong><a href="mailto:femonres@gmail.com?Subject=Hola%20desde%20HTML">femonres@gmail.com</a></span></li>

@@ -3,6 +3,37 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+#contenido {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#contenido div {
+    box-sizing: border-box;
+    min-width: 50px;
+}
+
+#seccion_central {
+    background-color: #82c3a6;
+}
+
+#seccion_secundaria {
+    background-color: #d5c75f;
+}
+
+#footer {
+    background-color: #C6d5c5;
+}
+
+@media all and (max-width:900px) {
+    #contenido {
+        width: 900px;
+    }
+}
+
+/*
 img {
     box-shadow: 2px 2px 5px 0 #02010a;
 }
@@ -14,7 +45,7 @@ header {
     padding: 2px 20px 10px 20px;
 }
 
-header h1.nav_title {
+header .nav_title h1 {
     text-shadow: 2px 2px #02010a;
     max-width: 60%;
 }
@@ -29,15 +60,4 @@ header nav.nav_bar a {
 header nav.nav_bar a.active {
     text-decoration: none;
 }
-
-div#contenido {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    margin: auto;
-}
-
-@media all and (min-width:900px) {
-    width: 900px;
-}
+*/
