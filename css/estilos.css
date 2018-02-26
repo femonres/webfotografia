@@ -1,63 +1,130 @@
+/**
+ * Fondo negro para toda la pagina
+*/
 body {
     background-color: #02010a;
     font-family: 'Dancing Script', cursive;
 }
 
+/**
+ * Sombra bajo las imagenes
+*/
+img {
+    box-shadow: 2px 2px 5px 0 #02010a;
+}
+
+/**
+ * Contenedor de la pagina
+*/
 #contenido {
-    width: 80%;
+    width: 900px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
 }
 
-#contenido div {
-    box-sizing: border-box;
-    min-width: 50px;
+/**
+ * Cabecera y menu de la pagina
+*/
+#header {
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 2px 20px 10px 20px;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+#header .nav_title h1 {
+    text-shadow: 2px 2px #02010a;
+    text-align: left;
+}
+
+#header .nav_menu nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#header .nav_menu nav a {
+    margin: 2px 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#header .nav_menu nav a.active {
+    text-decoration: none;
+}
+
+/**
+ * Secciones de la pagina
+ * Primer seccion de 1 columna
+*/
 #seccion_central {
     background-color: #82c3a6;
+    width: 100%;
 }
 
+#seccion_central figure {
+    width: 90%;
+    padding: 10px;
+}
+
+#seccion_central figure img {
+    width: 100%;
+}
+
+/**
+ * Secciones de la pagina
+ * Segunda seccion de 2 columnas
+*/
 #seccion_secundaria {
     background-color: #d5c75f;
+    width: 100%;
 }
 
+/**
+ * Pie de la pagina 
+ * contenido en 4 columnas
+*/
 #footer {
     background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 20px 10px 20px;
+    width: 100%;
 }
 
-@media all and (max-width:900px) {
-    #contenido {
-        width: 900px;
-    }
+#footer .icons {
+    width: 18px;
+    height: 18px;
+}
+
+#footer a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#footer #redes_sociales ul {
+    list-style-type: none;
+}
+
+#footer #redes_sociales ul img {
+    box-shadow: 0 0;
 }
 
 /*
-img {
-    box-shadow: 2px 2px 5px 0 #02010a;
-}
+@media all and (max-width:900px) and (min-width:700px) {
+    #contenido {
+        width: 100%;
+    }
 
-header {
-    background-color: #5b7989;
-    color: whitesmoke;
-    border-radius: 10px 10px 0 0;
-    padding: 2px 20px 10px 20px;
-}
-
-header .nav_title h1 {
-    text-shadow: 2px 2px #02010a;
-    max-width: 60%;
-}
-
-header nav.nav_bar {}
-
-header nav.nav_bar a {
-    color: whitesmoke;
-    margin: 2px 10px
-}
-
-header nav.nav_bar a.active {
-    text-decoration: none;
+    #header {
+        width: 100%;
+    } 
 }
 */
